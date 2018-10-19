@@ -1,0 +1,1 @@
+Installation is handeled by the chroot-inside-Debian-Live.hook.chroot during ISO creation and the selks-first-time-setup script after installation. 

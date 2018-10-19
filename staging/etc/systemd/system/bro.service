@@ -1,0 +1,15 @@
+[Unit]
+Description=The Bro Network Security Monitor
+After=network.target
+Requires=network.target
+
+[Service]
+Type=forking
+User=logstash
+Group=logstash
+ExecStart=/usr/bin/broctl deploy
+ExecReload=/usr/bin/broctl update
+ExecStop=/usr/bin/broctl stop
+
+[Install]
+WantedBy=multi-user.target
