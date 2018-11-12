@@ -27,8 +27,8 @@ filebeat.inputs:
   paths:
     - /var/log/*.log
     - "/var/log/bro/**/conn*"
-          type "bro_conn"
-          tags ["bro", "import"]
+      type "bro_conn"
+      tags ["bro", "import"]
 
     - "/var/log/bro/**/dce_rpc*"
       type "bro_dce_rpc"
