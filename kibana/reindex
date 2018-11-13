@@ -1,0 +1,6 @@
+#!/bin/bash
+for file in *.json
+do
+	sed -i s/"\*:logstash-\*"/logstash-bro-\*/g $file
+done
+
